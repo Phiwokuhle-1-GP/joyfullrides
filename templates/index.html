@@ -1,0 +1,375 @@
+{% extends "base.html" %}
+
+{% block title %}Joyfull Rides Shuttle | Safe School Transport{% endblock %}
+{% block meta_desc %}Joyfull Rides Shuttle provides safe, reliable school drop-offs and pickups. Request a quote or WhatsApp us.{% endblock %}
+
+{% block content %}
+
+<!-- Hero -->
+<header id="top" class="hero">
+  <div class="container hero-content">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <p class="hero-pill mb-3">Reliable • Safe • On-time school transport</p>
+        <h1 class="display-5 fw-bold mb-3">
+          Safe school drop-offs & pickups for busy parents.
+        </h1>
+        <p class="lead text-muted mb-4">
+          Professional drivers, clear communication, and consistent routes.
+          Request a quote in 60 seconds.
+        </p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <button class="btn btn-accent btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#quoteModal">
+            Request Quote
+          </button>
+
+          <a class="btn btn-outline-secondary btn-lg" href="#routes">View Routes</a>
+          <a class="btn btn-outline-dark btn-lg" href="tel:+27XXXXXXXXX">Call Now</a>
+        </div>
+
+        <div class="hero-trust mt-4">
+          <span class="badge badge-accent">School runs</span>
+          <span class="badge badge-accent">Aftercare</span>
+          <span class="badge badge-accent">Monthly packages</span>
+        </div>
+      </div>
+
+      <div class="col-lg-5 d-none d-lg-block"></div>
+    </div>
+  </div>
+</header>
+
+<!-- Floating Feature Cards -->
+<section class="feature-float">
+  <div class="container">
+    <div class="row g-3 justify-content-center">
+      <div class="col-md-4">
+        <div class="card feature-card p-3">
+          <div class="feature-icon">🛡️</div>
+          <h6 class="fw-bold mb-1">Safety first</h6>
+          <p class="text-muted small mb-0">Vetted drivers, seatbelts, clear rules, parent updates.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card feature-card p-3">
+          <div class="feature-icon">⏱️</div>
+          <h6 class="fw-bold mb-1">On-time routine</h6>
+          <p class="text-muted small mb-0">Reliable schedules with route planning and pickup windows.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card feature-card p-3">
+          <div class="feature-icon">💬</div>
+          <h6 class="fw-bold mb-1">Fast communication</h6>
+          <p class="text-muted small mb-0">WhatsApp updates for delays, changes, and confirmations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Strip -->
+<section class="stats-strip">
+  <div class="container">
+    <div class="row text-center g-3">
+      <div class="col-6 col-md-3">
+        <div class="stat-num">98%</div>
+        <div class="stat-label">On-time target</div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-num">6+</div>
+        <div class="stat-label">Active routes</div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-num">200+</div>
+        <div class="stat-label">Monthly rides</div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">WhatsApp support</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section id="how" class="section">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">How it works</h2>
+      <p class="text-muted">Simple process. Clear communication. Consistent routine.</p>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card card-soft p-4 h-100">
+          <div class="step">1</div>
+          <h5 class="fw-bold">Request a quote</h5>
+          <p class="text-muted mb-0">Tell us the school, pickup area, and schedule.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-soft p-4 h-100">
+          <div class="step">2</div>
+          <h5 class="fw-bold">Confirm route & price</h5>
+          <p class="text-muted mb-0">We match you to an existing route or create one.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-soft p-4 h-100">
+          <div class="step">3</div>
+          <h5 class="fw-bold">Start the routine</h5>
+          <p class="text-muted mb-0">Daily pickup/drop-off with parent updates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Routes & Pricing -->
+<section id="routes" class="section bg-light">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-3">
+      <div>
+        <h2 class="fw-bold mb-1">Routes & Pricing</h2>
+        <p class="text-muted mb-0">Example packages — final pricing depends on distance & schedule.</p>
+      </div>
+
+      <button class="btn btn-accent" type="button" data-bs-toggle="modal" data-bs-target="#quoteModal">
+        Get my quote
+      </button>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card card-elevate h-100 p-4">
+          <h5 class="fw-bold">Morning Only</h5>
+          <p class="text-muted small">Home → School</p>
+          <div class="price">From R___ / month</div>
+          <ul class="mt-3 small text-muted">
+            <li>Fixed pickup window</li>
+            <li>WhatsApp updates</li>
+            <li>Monthly billing</li>
+          </ul>
+
+          <button class="btn btn-outline-accent mt-2" type="button" data-bs-toggle="modal" data-bs-target="#quoteModal">
+            Request
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card-elevate h-100 p-4 border-accent">
+          <span class="badge badge-accent mb-2">Most popular</span>
+          <h5 class="fw-bold">Morning + Afternoon</h5>
+          <p class="text-muted small">Home ↔ School</p>
+          <div class="price">From R___ / month</div>
+          <ul class="mt-3 small text-muted">
+            <li>Drop-off + pickup</li>
+            <li>Aftercare support (optional)</li>
+            <li>Priority on existing routes</li>
+          </ul>
+
+          <button class="btn btn-accent mt-2" type="button" data-bs-toggle="modal" data-bs-target="#quoteModal">
+            Request
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card-elevate h-100 p-4">
+          <h5 class="fw-bold">Custom Route</h5>
+          <p class="text-muted small">Multiple kids / estates / schools</p>
+          <div class="price">Quote</div>
+          <ul class="mt-3 small text-muted">
+            <li>Group discounts</li>
+            <li>Flexible pickup points</li>
+            <li>School partnership options</li>
+          </ul>
+
+          <button class="btn btn-outline-accent mt-2" type="button" data-bs-toggle="modal" data-bs-target="#quoteModal">
+            Request
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Safety -->
+<section id="safety" class="section">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-6">
+        <h2 class="fw-bold">Safety & peace of mind</h2>
+        <p class="text-muted">
+          Parents choose Joyfull Rides because we take safety seriously and communicate clearly.
+        </p>
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="mini-card p-3">
+              <div class="mini-ico">✅</div>
+              <div class="fw-semibold">Seatbelts & rules</div>
+              <div class="text-muted small">Clear behavior and safety expectations.</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mini-card p-3">
+              <div class="mini-ico">👮</div>
+              <div class="fw-semibold">Vetted drivers</div>
+              <div class="text-muted small">Professional, responsible, parent-friendly.</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mini-card p-3">
+              <div class="mini-ico">📍</div>
+              <div class="fw-semibold">Route control</div>
+              <div class="text-muted small">Predictable pickup zones and timing.</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mini-card p-3">
+              <div class="mini-ico">💬</div>
+              <div class="fw-semibold">WhatsApp updates</div>
+              <div class="text-muted small">Delays and confirmations communicated.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card-elevate overflow-hidden" style="border-radius:18px;">
+          <img
+            src="{{ url_for('static', filename='service-3.jpg') }}"
+            alt="Joyfull Rides Shuttle Service"
+            class="w-100"
+            style="height:320px; object-fit:cover;"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section bg-soft" id="testimonials">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">What parents say</h2>
+      <p class="text-muted">Short, real feedback builds trust fast.</p>
+    </div>
+
+    <div class="row g-3 justify-content-center">
+      <div class="col-md-5">
+        <div class="card card-elevate p-4 h-100">
+          <p class="mb-2">“Always on time and communicates well. My child feels safe.”</p>
+          <div class="text-muted small">— Parent (School Run)</div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="card card-elevate p-4 h-100">
+          <p class="mb-2">“Very reliable. Pickup routine is consistent and professional.”</p>
+          <div class="text-muted small">— Parent (Monthly Package)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">FAQs</h2>
+      <p class="text-muted">Quick answers for parents before they contact you.</p>
+    </div>
+
+    <div class="accordion accordion-flush mx-auto" style="max-width: 900px;" id="faqAcc">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f1">
+            Which areas do you cover?
+          </button>
+        </h2>
+        <div id="f1" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+          <div class="accordion-body text-muted">
+            Add your suburbs/areas here. Mention you can create a route if enough parents request it.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f2">
+            How do payments work?
+          </button>
+        </h2>
+        <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+          <div class="accordion-body text-muted">
+            Monthly packages, upfront billing, and late/absence policy (keep it simple).
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f3">
+            What if my child is sick or absent?
+          </button>
+        </h2>
+        <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+          <div class="accordion-body text-muted">
+            Add your cancellation / notification rule (e.g., notify before 6am).
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact (Map + Form) -->
+<section id="contact" class="section bg-light">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <h2 class="fw-bold">Contact Joyfull Rides</h2>
+        <p class="text-muted">WhatsApp is the fastest way to reach us.</p>
+
+        <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.6997632130074!2d27.998372874651107!3d-26.108717677135484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9575ef673565ed%3A0xbd88d5c51ba4eca7!2sJoyful%20Rides%20Shuttle%20Services!5e0!3m2!1sen!2sza!4v1769518081510!5m2!1sen!2sza"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="d-flex gap-2 mt-3 flex-wrap">
+          <a class="btn btn-accent" href="https://wa.me/27XXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-outline-secondary" href="tel:+27XXXXXXXXX">Call</a>
+          <a class="btn btn-outline-secondary" href="mailto:info@joyfulridesshuttle.co.za">Email</a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card card-elevate p-4">
+          <h5 class="fw-bold mb-3">Send a message</h5>
+          <form>
+            <div class="row g-2">
+              <div class="col-md-6"><input class="form-control" placeholder="Name" required></div>
+              <div class="col-md-6"><input class="form-control" placeholder="Email" type="email"></div>
+              <div class="col-12"><input class="form-control" placeholder="Subject"></div>
+              <div class="col-12"><textarea class="form-control" rows="5" placeholder="Message"></textarea></div>
+              <div class="col-12"><button class="btn btn-accent w-100" type="button">Send</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

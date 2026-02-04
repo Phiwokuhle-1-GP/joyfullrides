@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}{{ post.title }} | Joyfull Rides Shuttle{% endblock %}
+{% block meta_desc %}{{ post.excerpt }}{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container">
+    <a class="text-muted small" href="{{ url_for('blog') }}">← Back to Blog</a>
+    <h1 class="fw-bold mt-2 mb-2">{{ post.title }}</h1>
+    <div class="text-muted small">{{ post.date }} • {{ post.read_time }} • {{ post.category }}</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width: 980px;">
+    <div class="card card-elevate overflow-hidden mb-4">
+      <img src="{{ post.cover }}" alt="{{ post.title }}" class="w-100" style="height:360px; object-fit:cover;">
+    </div>
+
+    <article class="post-content card card-soft p-4 p-md-5">
+      {{ post.content_html | safe }}
+      <hr class="my-4">
+      <div class="d-flex flex-wrap gap-2">
+        <button class="btn btn-accent" type="button" data-bs-toggle="modal" data-bs-target="#quoteModal">
+          Request a quote
+        </button>
+        <a class="btn btn-outline-secondary" href="{{ url_for('home') }}#contact">Contact us</a>
+      </div>
+    </article>
+  </div>
+</section>
+{% endblock %}
